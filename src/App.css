@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
+.courses {
+    display: flex;
+    margin-bottom: 15px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.courses > *:first-child {
+    margin-left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.courses > *:last-child {
+    margin-right: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.courses > * {
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.course-item {
+}
+.course-item-title {
+    font-weight: 700;
+    font-size: 18px;
+}
+.course-item-value {
+    font-size: 32px;
+    font-weight: 300;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.course-item-value.top {
+    color: rgb(255, 51, 51);
+}
+
+.course-item-value.bottom {
+    color: rgb(19, 189, 61);
+}
+
+.footer__link {
+    margin: 0 15px;
+}
+
+.lop{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@media all and (max-width: 500px){
+    .col-6{
+        max-width: 100%;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .card{
+        border: 1px solid rgba(0,0,0,.125);
+        min-width: auto;
+    }
+
+    .course-item-title{
+        font-weight: 300;
+    }
+    .course-item-value{
+        font-size: 1rem;
+    }
+
+    .col-6{
+        padding: 0;
+    }
+
+    .row{
+        margin: 0;
+    }
 }
